@@ -1,0 +1,61 @@
+/* Base Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--background, #f9f9f9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Box Styling */
+  .box {
+    width: 150px;
+    height: 150px;
+    margin: 2rem auto;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+  }
+  
+  /* Animated State */
+  .box.animate {
+    animation: spinScale 1s ease forwards;
+  }
+  
+  /* Keyframes */
+  @keyframes spinScale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.3);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  /* Button Styling */
+  .controls button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #27ae60;
+  }
+  
